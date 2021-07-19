@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtDialCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Get country by dial code. ex: +389"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/txtCountryByDialCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edtFullNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Get country by full number. ex: +38971587898"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/txtFullNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Get country by iso code. ex: MK"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/txtISOCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnShowCountryPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Show Country picker" />
+
+</LinearLayout>

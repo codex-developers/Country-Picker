@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Search</string>
+    <string name="flag_name">%1$s  %2$s</string>
+    <string name="sorted_by">Sorted by: %s</string>
+</resources>
