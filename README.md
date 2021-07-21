@@ -6,9 +6,20 @@
 
 ### Gradle dependencies
 
-`dependencies {
+```
+dependencies {
 	   implementation 'com.github.VetonNeziri:Country-Picker:versionNumber'
-}`
+}
+```
+
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
 
 ### Android support
 
