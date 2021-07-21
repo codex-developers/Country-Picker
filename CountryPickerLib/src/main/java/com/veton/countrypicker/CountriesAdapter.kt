@@ -29,7 +29,11 @@ class CountriesAdapter(
 
     inner class ViewHolder(private val binding: CountryListCellBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(country: Country) {
-            binding.txtFlagName.text = binding.root.context.getString(R.string.flag_name, country.flag, country.name)
+            with(binding){
+                txtCountryName.text = country.name
+                txtFlag.text = country.flag
+            }
+//            binding.txtFlagName.text = binding.root.context.getString(R.string.flag_name, country.flag, country.name)
         }
     }
 
